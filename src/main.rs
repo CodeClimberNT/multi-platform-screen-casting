@@ -31,7 +31,7 @@ impl App for MyApp {
                 
 
                 ui.vertical_centered( |ui| {
-                    
+
                     ui.add_space(40.0);
                     ui.heading("rustream");
                     ui.add_space(40.0);
@@ -53,6 +53,7 @@ impl App for MyApp {
                     // Mostra il messaggio relativo al bottone cliccato
                     if self.button1_clicked {
                         ui.label("Hai cliccato Cast New Streaming");
+                        capture_screen();
                     } else if self.button2_clicked {
                         ui.label("Hai cliccato View Existing Streaming");
                     }
